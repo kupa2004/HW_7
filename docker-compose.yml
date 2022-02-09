@@ -2,9 +2,9 @@ version: '3'
 services:
   main:
     image: kupa2004:latest
-    build: home/Dockerbuild .
+    build: Dockerbuild .
   web:
-    build: home/Dockerrun .
+    build: Dockerrun .
     ports:
       - 8083:8080
     depends_on:
