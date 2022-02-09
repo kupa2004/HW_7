@@ -1,8 +1,8 @@
 version: '3'
-  services:
-    main:
-      image: kupa2004:latest
-      build: home/Dockerbuild .
+services:
+  main:
+    image: kupa2004:latest
+    build: home/Dockerbuild .
   web:
     build: home/Dockerrun .
     ports:
