@@ -4,7 +4,7 @@ services:
     image: kupa2004:latest
     build: ./build
     volumes:
-      - ./home/boxfuse-sample-java-war-hello/target:/home/run
+      - ./home/boxfuse-sample-java-war-hello/target:/home/HW_7/run
   web:
     build: ./run
     ports:
@@ -12,4 +12,4 @@ services:
     depends_on:
       - main
     volumes:
-      - ./usr/local/tomcat/webapps:/home/run
+      - ./usr/local/tomcat/webapps:/home/HW_7/run
