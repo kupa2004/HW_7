@@ -15,4 +15,3 @@ services:
       - Temp:/tmp
 volumes:
   Temp:
-    external: true
