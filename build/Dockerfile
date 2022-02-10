@@ -7,4 +7,4 @@ RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR boxfuse-sample-java-war-hello
 RUN mvn package
 WORKDIR target
-#RUN docker cp kupa2004:latest:/home/boxfuse-sample-java-war-hello/target /home/run
+ADD hello-1.0.war /home/run
