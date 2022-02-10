@@ -6,7 +6,6 @@ RUN apt-get install git -y git
 WORKDIR /home
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR boxfuse-sample-java-war-hello
-RUN mvn clean
 RUN mvn package
 WORKDIR target
-ADD hello-1.0.war /home/HW_7/run
+COPY hello-1.0.war /home/HW_7/run
