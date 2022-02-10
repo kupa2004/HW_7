@@ -7,10 +7,10 @@ services:
   web:
     build: ./run
     ports:
-      - 8081:8080
+      - 8082:8080
     depends_on:
       - main
     volumes:
-      - Temp:/usr/local/tomcat/webapps/
+      - Temp:/tmp
 volumes:
   Temp:
