@@ -4,7 +4,7 @@ services:
     image: kupa2004:latest
     build: ./build
     volumes:
-      - Temp:/tmp:Z
+      - Temp:/home/boxfuse-sample-java-war-hello/target/
   web:
     build: ./run
     ports:
@@ -12,6 +12,6 @@ services:
     depends_on:
       - main
     volumes:
-      - Temp:/tmp
+      - Temp:/usr/local/tomcat/webapps/
 volumes:
   Temp:
