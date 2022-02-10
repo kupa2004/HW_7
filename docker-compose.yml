@@ -3,13 +3,9 @@ services:
   main:
     image: kupa2004:latest
     build: ./build
-    bind-mounts:
-      - /home/HW_7/run:/home/boxfuse-sample-java-war-hello/target
   web:
     build: ./run
     ports:
       - 8083:8080
     depends_on:
       - main
-    bind-mounts:
-      - /home/HW_7/run:/usr/local/tomcat/webapps
