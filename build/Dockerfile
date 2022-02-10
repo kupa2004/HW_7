@@ -1,6 +1,8 @@
-FROM maven:3.6.1-jdk-8 as build
+FROM ubuntu:20.04
 RUN apt-get update
-RUN apt-get install -y git
+RUN apt-get install default-jdk -y default-jdk
+RUN apt-get install maven -y maven
+RUN apt-get install git -y git
 RUN rm -rf /var/lib/apt/lists/*
 WORKDIR /home
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
