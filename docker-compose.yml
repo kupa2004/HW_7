@@ -8,4 +8,5 @@ services:
     ports:
       - 8083:8080
     depends_on:
-      - server
+      - main
+
