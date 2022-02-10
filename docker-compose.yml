@@ -4,12 +4,14 @@ services:
     image: kupa2004:latest
     build: ./build
     volumes:
-      - /tmp:/tmp:Z
+      - Temp:/tmp:Z
   web:
     build: ./run
     ports:
-      - 8083:8080
+      - 8084:8080
     depends_on:
       - main
     volumes:
-      - /tmp:/tmp
+      - Temp:/tmp
+volumes:
+  Temp:
