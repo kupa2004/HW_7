@@ -4,7 +4,7 @@ services:
     image: kupa2004:latest
     build: ./build
   web:
-    build: ./java
+    build: ./run
     ports:
       - 8083:8080
     depends_on:
