@@ -4,7 +4,7 @@ services:
     image: kupa2004:latest
     build: ./build
     volumes:
-      - /tmp
+      - /tmp:/tmp:Z
   web:
     build: ./run
     ports:
@@ -12,4 +12,4 @@ services:
     depends_on:
       - main
     volumes_from:
-      - main:rw
+      - main
